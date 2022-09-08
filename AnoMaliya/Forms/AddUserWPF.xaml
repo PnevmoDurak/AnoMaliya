@@ -1,0 +1,53 @@
+﻿<Window x:Class="AnoMaliya.Forms.AddUserWPF"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AnoMaliya.Forms"
+        mc:Ignorable="d"
+        Title="AddUserWPF" Height="400" Width="800" Background="red">
+    <Grid>
+        <Image Source="/Resource/putin-laughing.gif" RenderTransformOrigin="0.5,0.5" Margin="-134,-53,-130,-136" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.162"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <StackPanel HorizontalAlignment="Center">
+            
+            <StackPanel Orientation="Horizontal">
+                <Label Margin="5" Foreground="White">Укажите имя пользователя</Label>
+                <TextBox Background="White" MinWidth="150" Margin="5" Name="tbName" ToolTip="Когда рожали, как назвали?"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Margin="5" Foreground="White">Укажите Возраст</Label>
+                <TextBox  MinWidth="150" Margin="5" Name="tbAge" ToolTip="Слкiлкi рокiв, от рождiства хрiстова?" Background="#FF1A3292"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Margin="5" Foreground="White">Номерок оставь</Label>
+                <TextBox MinWidth="150" Margin="5" Name="tbNumber" ToolTip="Номерок свой сказал" Background="#FFEF2020"></TextBox>
+            </StackPanel>
+
+
+            <StackPanel Orientation="Horizontal">
+                <Label Margin="5" Foreground="White">Укажите пол</Label>
+                <ComboBox MinWidth="150" Margin="5" Name="cbGender"></ComboBox>
+            </StackPanel>
+            
+            <Button Name="btAddUser" Click="btAddUser_Click" Margin="5" Padding="5" HorizontalAlignment="Center">Welcom to Hell</Button>
+            <Button Name="btDown" Click="btDown_Click" Margin="5" Padding="5" HorizontalAlignment="Center">Fuck go back</Button>
+        </StackPanel>
+            <Image Source="/Resource/siska.png" Margin="260,-2,-260,1" />
+            <Image Source="/Resource/download.jpg" Margin="-211,10,349,17" />
+            
+
+
+    </Grid>
+</Window>
